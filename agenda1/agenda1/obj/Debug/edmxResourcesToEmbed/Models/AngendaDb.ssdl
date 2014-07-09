@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AgendaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="AgendaModelStoreContainer">
+    <EntitySet Name="Contacto" EntityType="AgendaModel.Store.Contacto" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Contacto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="smallint" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="50" />
+    <Property Name="apellido" Type="nvarchar" MaxLength="50" />
+    <Property Name="telefono" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+</Schema>
