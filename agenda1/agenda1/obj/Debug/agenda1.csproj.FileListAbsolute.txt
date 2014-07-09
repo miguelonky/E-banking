@@ -28,33 +28,3 @@ c:\users\lhernandez\documents\visual studio 2012\Projects\agenda1\agenda1\bin\Sy
 c:\users\lhernandez\documents\visual studio 2012\Projects\agenda1\agenda1\obj\Debug\agenda1.dll
 c:\users\lhernandez\documents\visual studio 2012\Projects\agenda1\agenda1\obj\Debug\agenda1.pdb
 C:\Users\lhernandez\Documents\Visual Studio 2012\Projects\agenda1\agenda1\obj\Debug\agenda1.csprojResolveAssemblyReference.cache
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\agenda1.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\agenda1.pdb
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\Antlr3.Runtime.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\EntityFramework.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\Newtonsoft.Json.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Net.Http.Formatting.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.Http.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.Http.WebHost.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.Mvc.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.Optimization.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.Providers.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.Razor.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.WebPages.Deployment.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.WebPages.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.WebPages.Razor.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\WebGrease.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\EntityFramework.xml
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\Newtonsoft.Json.xml
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Net.Http.Formatting.xml
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.Http.xml
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.Http.WebHost.xml
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.Mvc.xml
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.Razor.xml
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.WebPages.xml
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.WebPages.Deployment.xml
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\bin\System.Web.WebPages.Razor.xml
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\obj\Debug\agenda1.csprojResolveAssemblyReference.cache
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\obj\Debug\agenda1.dll
-C:\Users\lhernandez\Documents\E-Banking\agenda1\agenda1\obj\Debug\agenda1.pdb
