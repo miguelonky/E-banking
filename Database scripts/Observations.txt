@@ -1,0 +1,8 @@
+Observations
+
+1. this is only the basic structure of database
+2. left the stored procedures
+3. left triggers
+4. left functions
+
+I'm working in the procedures :)
