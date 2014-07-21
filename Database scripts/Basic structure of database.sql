@@ -96,7 +96,7 @@ alter table accounts add constraint fk_accounts_userid foreign key (userid) refe
 alter table cards add constraint fk_cards_userid foreign key (userid) references clients(id);
 alter table loans add constraint fk_loans_userid foreign key (userid) references clients(id);
 alter table cards_payments add constraint fk_cards_payments_card_number foreign key (card_number) references cards(id);
-alter table cards_payments add constraint fk_loans_payments_account_number foreign key (account_number) references loans(id);
+alter table loans_payments add constraint fk_loans_payments_account_number foreign key (account_number) references loans(id);
 alter table beneficiary add constraint fk_beneficiary_userid foreign key (userid) references clients (id);
 
 -- End creating relationships
