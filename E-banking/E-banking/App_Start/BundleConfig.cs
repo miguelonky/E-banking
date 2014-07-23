@@ -24,6 +24,8 @@ namespace E_banking
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/JS").Include(
+                       "~/Scripts/JS/jquery-1.9.1.js*",
+                       "~/Scripts/JS/jquery-1.9.1.min.js*",
                         "~/Scripts/JS/custom*",
                         "~/Scripts/JS/jquery.reveal*",
                         "~/Scripts/JS/jquery.flexslider*",
@@ -34,8 +36,7 @@ namespace E_banking
                         "~/Scripts/JS/jquery.prettyPhoto*",
                         "~/Scripts/JS/jquery.easing.min*",
                         "~/Scripts/JS/superfish*",
-                         "~/Scripts/JS/jquery-1.8.1.min.js*",
-                         "~/Scripts/JS/modernizr.custom.14583*"));
+                        "~/Scripts/JS/modernizr.custom.14583*"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/custom.css"));
 
