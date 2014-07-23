@@ -28,6 +28,7 @@ c:\users\lhernandez\documents\visual studio 2012\Projects\E-banking\E-banking\bi
 c:\users\lhernandez\documents\visual studio 2012\Projects\E-banking\E-banking\obj\Debug\E-banking.dll
 c:\users\lhernandez\documents\visual studio 2012\Projects\E-banking\E-banking\obj\Debug\E-banking.pdb
 c:\users\lhernandez\documents\visual studio 2012\Projects\E-banking\E-banking\obj\Debug\E-banking.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\alienware\Documents\GitHub\E-Banking\E-banking\E-banking\bin\E-banking.dll.config
 C:\Users\alienware\Documents\GitHub\E-Banking\E-banking\E-banking\bin\E-banking.dll
 C:\Users\alienware\Documents\GitHub\E-Banking\E-banking\E-banking\bin\E-banking.pdb
@@ -59,3 +60,35 @@ C:\Users\alienware\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web
 C:\Users\alienware\Documents\GitHub\E-Banking\E-banking\E-banking\obj\Debug\E-banking.csprojResolveAssemblyReference.cache
 C:\Users\alienware\Documents\GitHub\E-Banking\E-banking\E-banking\obj\Debug\E-banking.dll
 C:\Users\alienware\Documents\GitHub\E-Banking\E-banking\E-banking\obj\Debug\E-banking.pdb
+=======
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\E-banking.dll.config
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\E-banking.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\E-banking.pdb
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\Antlr3.Runtime.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\EntityFramework.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\Newtonsoft.Json.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Net.Http.Formatting.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.Http.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.Http.WebHost.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.Mvc.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.Optimization.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.Providers.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.Razor.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.Razor.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\WebGrease.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\EntityFramework.xml
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\Newtonsoft.Json.xml
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Net.Http.Formatting.xml
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.Http.xml
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.Http.WebHost.xml
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.Mvc.xml
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.Razor.xml
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.xml
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.Razor.xml
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\obj\Debug\E-banking.dll
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\obj\Debug\E-banking.pdb
+>>>>>>> origin/master
