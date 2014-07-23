@@ -1,0 +1,268 @@
+﻿
+<!DOCTYPE html>
+<!--[if IE 7]>                  <html class="ie7 no-js" lang="en">     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="en">     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="en">  <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>OptimaSales - Home</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!-- Mobile Specific Metas
+  ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      @Styles.Render("~/Content/css")
+   
+    <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    </head>
+<body class="page home-page">
+
+    <!-- Primary Page Layout
+        ================================================== -->
+	
+    <!-- BEGIN WRAPPER -->
+    <div id="wrapper">
+			
+			
+    <!-- BEGIN HEADER -->
+        <header id="header">
+				
+            <!--Top Header-->
+            <div id="top-header">
+                <div class="container">
+                    <div class="grid_12">
+							
+                        <!-- Begin Language Switcher -->
+							
+							
+							
+                        <!-- End Language Switcher -->
+							
+                        <div class="login-holder fright">
+                            <a href="#" class="signin" data-reveal-id="signin">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+				
+            <!--Main Header-->
+            <div id="main-header">
+                <div class="container">
+                    <div class="grid_12">
+						
+                        <!-- BEGIN LOGO -->
+                        <div id="logo">
+                            <!-- Image based Logo-->
+                            <a href="index-2.html"><img src="~/Content/Style/Imagen/logo.png" alt=""/></a>
+                            
+								
+                            <!-- Text based Logo
+                                <h1><a href="index.html"><span>Optima</span>Sales</a></h1>
+                                <p class="tagline">optimize your business</p>
+                                -->
+								
+                        </div>
+                        <!-- END LOGO -->
+							
+                        <!-- BEGIN NAVIGATION -->
+                        <nav class="primary">
+                            <ul class="sf-menu">
+                                <li class="current-menu-item"><a href="#">Inicio</a>
+                                   
+                                </li>
+                                <li class="empty-item"><a href="#">Nosotros</a>
+                                    
+                                </li>
+                                <li class="empty-item"><a href="#">Oficinas y Cajeros</a>
+                                    
+                                </li>
+                               
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </nav>
+                        <!-- END NAVIGATION -->
+							
+                    </div>
+                </div>
+            </div>
+				
+        </header>
+          @RenderBody()
+    </div>    
+  
+    
+    
+    <section id="widgets">
+				<div class="indent">
+					<div class="container">
+					
+						<div class="grid_2">
+							<!-- BEGIN NAV Widget -->
+							<div class="widget widget-nav">
+								<h4>Pages</h4>
+								<ul>
+									<li><a href="index-2.html">Home</a></li>
+									<li><a href="how-it-works.html">How it works</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="events.html">Events</a></li>
+									<li><a href="about-us.html">About us</a></li>
+									<li><a href="contact-us.html">Contact us</a></li>
+								</ul>
+							</div>
+							<!-- END NAV Widget -->
+						</div>
+						
+						<div class="grid_3">
+							<!-- BEGIN SOCIAL LINKS Widget -->
+						    <div class="widget widget-social">
+						        <h4>Social media</h4>
+						        <ul class="social-links">
+						            <li class="facebook"><a href="#">Be a fan on Facebook</a></li>
+						            <li class="twitter"><a href="#">Follow us on Twitter</a></li>
+						            <li class="google-plus"><a href="#">Join us on Google Plus</a></li>
+						            <li class="linkedin"><a href="#">Find us on Linkedin</a></li>
+						            <li class="rss"><a href="#">RSS feed</a></li>
+						            <li class="skype"><a href="#">Our Skype</a></li>
+						        </ul>
+						    </div>
+                            
+                            
+						    <!-- END SOCIAL LINKS Widget -->
+						</div>
+					    <div class="grid_3">
+					        <div class="widget widget-social">
+					            <h4>Ultimos Tweest</h4>
+					            <ul class="social-links">
+									
+					            </ul>
+					        </div>
+					    </div>
+                     
+					
+						
+						<div class="grid_3 colborder">
+							
+								
+									<div class="widget widget-newsletter">
+										<h4>Buscar Oficinas y Cajeros:</h4>
+										<form id="newsletter-form">
+											<input type="text" name="newsletter-text-input" id="newsletter-text-input" value="" placeholder="your email..." />
+											<div class="submit-holder">
+												<input type="submit" value=""/>
+											</div>
+										</form>
+									</div>
+									<!-- END NEWSLETTER Widget -->
+									
+								</div>
+							</div>
+						</div>
+					
+					
+			</section>
+			<!-- END WIDGETS -->
+			
+			
+			<!-- BEGIN FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="grid_12">
+                <small>&copy;2012 OptinaSales. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- BEGIN MODAL WINDOWS -->
+	<div id="signin" class="reveal-modal">
+		<header class="reveal-modal-header">
+			Sign in
+		</header>
+		<div class="cont">
+			<div class="indication">
+				classic
+			</div>
+			<form action="#" class="signin">
+				<p class="clearfix">
+					<label>Email:</label>
+					<input type="text" value="" />
+				</p>
+				<p class="clearfix">
+					<label>Password:</label>
+					<input type="text" value="" />
+				</p>
+				<p class="checkboxes without-label clearfix">
+					<span class="niceCheck"><input type="checkbox" name="ch1" /></span>
+					Remember me
+					<a href="#">Forgot password?</a>
+				</p>
+				<p class="without-label clearfix"><input type="submit" value="" /></p>
+			</form>
+			<div class="indication">
+				socials
+			</div>
+			<ul class="socials-login">
+				<li><a href="#" class="fb"></a></li>
+				<li><a href="#" class="tw"></a></li>
+			</ul>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+
+	<div id="signup" class="reveal-modal">
+		<header class="reveal-modal-header">
+			Sign up
+		</header>
+		<div class="cont">
+			<form action="#" class="signup">
+				<p class="clearfix">
+					<em>(<abbr>*</abbr>) All fields are required</em>
+				</p>
+				<p class="clearfix">
+					<label>Full name:<abbr>*</abbr></label>
+					<input type="text" value="" />
+				</p>
+				<p class="clearfix">
+					<label>Email:<abbr>*</abbr></label>
+					<input type="text" value="" />
+				</p>
+				<p class="clearfix">
+					<label>Password:<abbr>*</abbr></label>
+					<input type="text" value="" />
+				</p>
+				<p class="clearfix">
+					<label>Password (repeat):<abbr>*</abbr></label>
+					<input type="text" value="" />
+				</p>
+				<p class="clearfix">
+					<label>User verification:<abbr>*</abbr></label>
+					<span class="captcha">
+						<img src="images/captcha.png" alt="" />
+					</span>
+				</p>
+				<p class="checkboxes clearfix">
+					<span class="niceCheck"><input type="checkbox" name="ch1" /></span>
+					I agree with OptimaSales Terms &amp; Privacy Policy
+				</p>
+				<p class="without-label clearfix"><input type="submit" value="" /></p>
+			</form>
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	<!-- END MODAL WINDOWS -->
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    @Scripts.Render("~/bundles/JS")
+
+   
+
+</body>
+    </html>

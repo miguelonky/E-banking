@@ -244,6 +244,7 @@
     <Content Include="Content\Style\Imagen\li-marker-act.png" />
     <Content Include="Content\Style\Imagen\li-marker-dark.png" />
     <Content Include="Content\Style\Imagen\li-marker-default.png" />
+    <Content Include="Content\Style\login.css" />
     <Content Include="Content\Style\Imagen\logo.png" />
     <Content Include="Content\Style\Imagen\magnify.png" />
     <Content Include="Content\Style\Imagen\media-holder-bg.png" />
@@ -434,6 +435,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_PrincipalLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\_LoginLayout .cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

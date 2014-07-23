@@ -1385,7 +1385,7 @@ textarea:focus {
 	}
 label,
 legend {
-	display: block;
+	display: inline;
 	font-weight: bold;
 	}
 input[type="checkbox"] {

@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LoginLayout .cshtml";
+}
+<br>
+<br>
+
+<center>
+    <h2>BIENVENIDOS A E-BANKING PERSONAL</h2>
+
+    <br>
+    <br>
+    <div id="login-panel">
+
+        
+        <div>
+            <div>
+            <label>Nombre de usuario:</label>
+            <input type="text" name="usuario" value="Usuario" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre de usuario';}">
+            </div>
+            <input type="text" name="contraseña" value="Contraseña" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Contraseña';}">
+            
+        </div>
+        
+        <br />
+        <center><input type="submit" name="fsubmit" value="ENTRAR" onclick="submitForm('login-panel');return false;"/>
+        </center>
+        <br>
+        <a href="http://localhost:55842/home/forgetPass">¿Olvidó su contraseña?</a></p>
+        <a href="http://localhost:55842/home/getacess">Solicite su acceso</a>
+
+        
+    </div>
+
+</center>

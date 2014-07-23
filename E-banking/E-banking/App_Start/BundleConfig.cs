@@ -49,8 +49,9 @@ namespace E_banking
                        "~/Content/Style/prettyPhoto.css",
                        "~/Content/Style/skeleton.css",
                        "~/Content/Style/style.css",
+                       "~/Content/Style/login.css",
                        "~/Content/Style/superfish.css",
-                        "~/Content/custom.css"));
+                       "~/Content/custom.css"));
 
             
         }
