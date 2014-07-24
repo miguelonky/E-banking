@@ -72,12 +72,12 @@ create table transactions (
 	id int primary key not null identity (1,1),
 	transaction_number varchar (50) unique not null,
 	type varchar (50) not null,
-	account_number int not null,
-	account_number_destination int not null,
+	account_number varchar(50) not null,
+	account_number_destination varchar(50) not null,
 	amount decimal (13,2) not null,
 	date datetime not null,
 	status bit not null
-)
+) 
 
 create table beneficiary (
 	id int primary key not null identity (1,1),
