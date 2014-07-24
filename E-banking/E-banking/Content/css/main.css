@@ -1,0 +1,424 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. General - Padding Styles
+2. Top Header
+3. Slider section
+4. Servicios Section
+5. Contacteénos Section
+6. Copyright Section
+
+[Color codes]
+Dark Gray    #44484c
+Light Gray   #e1e1e1
+Dark Orange  #ee7f01
+white        #FFF
+
+General Styles
+********************************************************* */
+
+*,h1,h2,h3 {font-family: 'Roboto', sans-serif;}
+
+
+
+.hightlight{ color: black;}
+
+.header-section h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: -0.02em;   
+}
+
+.header-section h1:after{
+    content: '';
+    display: block;
+    width: 330px;
+    height: 1px;
+    background-color: #e1e1e1;
+    margin: 27px auto 0;  
+}
+
+.header-section span:after{
+    content: '';
+    display: block;
+    margin: -34px auto 60px;
+    height: 10px;
+    width: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #e1e1e1; 
+    /* Rotate*/
+    transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+            -ms-transform:rotate(45deg); /* IE 9 */
+                -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+}
+/* *********************************************************
+  Padding Styles
+********************************************************* */
+
+.cl-xlg-padding-top{ padding-top: 170px; }
+.cl-xlg-padding-bottom{ padding-bottom: 170px;}
+.cl-xlg-padding-both{ padding: 170px 0px 170px}
+
+.cl-lg-padding-top{ padding-top: 70px; }
+.cl-lg-padding-bottom{ padding-bottom: 70px;}
+.cl-lg-padding-both{ padding: 70px 0px 70px}
+
+.cl-md-padding-top{ padding-top: 50px; }
+.cl-md-padding-bottom{ padding-bottom: 50px;}
+.cl-md-padding-both{ padding: 50px 0px 50px}
+
+.cl-sm-padding-top{ padding-top: 20px; }
+.cl-sm-padding-bottom{ padding-bottom: 20px;}
+.cl-sm-padding-both{ padding: 20px  0px 20px;}
+
+.cl-xsm-padding-top{ padding-top: 15px; }
+.cl-xsm-padding-bottom{ padding-bottom: 15px;}
+.cl-xsm-padding-both{ padding: 15px  0px 15px;}
+
+/* *********************************************************
+  Top Header
+********************************************************* */
+
+.top-header{background-color: #fff;}
+
+.top-header .menu-left{text-align: right;}
+
+.top-header .menu-right{text-align: left;}
+
+.top-header .main-menu{ 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-header .main-menu li{ 
+    display:inline-block;
+    margin-right: 30px;
+}
+
+.top-header .menu-left .main-menu li:last-child{ margin-right: 0px;}
+
+.top-header .main-menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    line-height: 5.8em;
+    border-bottom: 2px solid transparent;
+    padding: 35px 1px;
+   -webkit-font-smoothing: antialiased;
+    
+   -webkit-transition:.4s ease all;
+	    -moz-transition:.4s ease all;
+	        -o-transition:.4s ease all;
+	            transition:.4s ease all;
+}
+
+.top-header .main-menu li a:hover{
+    border-bottom: 2px solid #88a919;
+    color: #88a919;
+}
+            
+ .top-header .logo-container {
+     padding-top: 10px;
+     padding-bottom: 10px;
+     text-align: center;
+     position: relative;
+     z-index: 9999;
+ }
+
+ .menu-scroll{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+ }
+
+.mobile-icon{ 
+    display: none;
+    position: absolute;
+    height: 80px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 19px 0px 0px 70px;
+    z-index: 555;
+    cursor: pointer;
+    color: white;
+}
+
+/*Mobile Menu and Icon */
+
+.mobile-icon .fa{font-size:3em}
+
+.top-header .mobile-menu{ display: none;}
+
+.top-header .mobile-menu .main-menu li a:hover{
+    border-bottom: 2px solid #88a919;
+    color: #88a919;
+}
+
+/* *********************************************************
+Slider section
+********************************************************* */
+
+.slider-section{
+    position: relative;
+    text-align: center;
+}
+
+/* Owl Slider */
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-theme .owl-controls .owl-buttons div{
+	background-color: #fff;
+    border-radius: 50px;
+    padding: 5px 17px;
+    color: #44484c;
+}
+
+.owl-theme .owl-controls .owl-buttons .fa{font-size: 3em;}
+
+.owl-theme .owl-controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 20px auto;
+    height: 56px;
+}
+
+
+.owl-theme .owl-controls .owl-buttons div:last-child{
+    display: inline-block;
+}/* End Owl Slider */
+
+
+.owl-theme .owl-controls .owl-buttons div:first-child{
+    display: inline-block;
+}
+
+.slider-section .slide-content{
+    text-align: left;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0px;
+    margin: 0 auto;
+    min-height: 220px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+.slide-content h1{
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.slide-content h1:after{
+    content: '';
+    height: 1px;
+    display: block;
+    width: 500px;
+    margin-top: 10px;
+    background-color: #fff;  
+}
+
+.slide-content p{
+    font-weight: 200;
+    letter-spacing: 0.04em;
+    font-size: 1.3em;
+    margin-top: -5px;
+    margin-bottom: 28px;
+}
+
+.slide-content a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+       
+   -webkit-transition:.4s ease all;
+	    -moz-transition:.4s ease all;
+	        -o-transition:.4s ease all;
+	            transition:.4s ease all;
+}
+
+.slide-content a:hover {
+    border: 1px solid #ee7f01;
+    background-color: #88a919;
+
+}
+
+/* *********************************************************
+Servicios section
+********************************************************* */
+
+.servicios-section .header-section h1{ color: #44484c;}
+
+.servicios-section .header-section p {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    color: #44484c;
+    letter-spacing: 0.01em;
+    line-height: 1.7em;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.servicios-section .items-left{text-align: right;}
+
+.servicios-section .items-left .fa{margin-left: 20px;}
+
+.servicios-section .items-right .fa{margin-right: 20px;}
+
+
+.servicios-section .servicios-items .fa{
+    display: inline-block;
+    font-size: 2.5em;
+    color: #ee7f01;
+    border: 1px solid #ee7f01;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom:10px; 
+
+   -webkit-transition:.6s ease all;
+	    -moz-transition:.6s ease all;
+	        -o-transition:.6s ease all;
+	            transition:.6s ease all;   
+} 
+
+.servicios-section .servicios-items .fa:hover{
+    background-color: #ee7f01;
+    color: #88a919;;  
+}
+
+.servicios-section  .servicios-items h4{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: .5pt;
+    text-transform: uppercase;
+}
+                   
+                
+/* *********************************************************
+Contacténos section
+********************************************************* */    
+    
+.contacto-section{
+    background-image: url(../Img/contact-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    border-bottom: 6px solid #88a919;
+}
+
+.contacto-section .header-section h1{
+    color: #fff;
+}
+                
+.contacto-section .servicios-items{
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.contacto-section .icon{
+    font-size:3em;
+    top:0;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border: 3px solid #fff;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 60px;
+    line-height: 130px;
+    /* Rotate*/
+    transform:rotate(-45deg);
+        -moz-transform:rotate(-45deg);
+            -ms-transform:rotate(-45deg); /* IE 9 */
+                -webkit-transform:rotate(-45deg); /* Opera, Chrome, and Safari */
+    
+    -webkit-transition:.5s ease all;
+	    -moz-transition:.5s ease all;
+	        -o-transition:.5s ease all;
+	            transition:.5s ease all;  
+}
+
+.contacto-section .icon:hover{
+    color:#fff;
+    background-color: #88a919;
+    border: 3px solid #88a919;
+     /* Rotate*/
+      -webkit-transform: rotateZ(315deg);
+        -moz-transform: rotateZ(315deg);
+            -o-transform: rotateZ(315deg);
+                transform: rotateZ(315deg);
+}
+
+.contacto-section i{
+    /* Rotate*/
+    transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+            -ms-transform:rotate(45deg); /* IE 9 */
+                -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+}
+
+.contacto-section h4{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: .4pt;
+}
+
+.contacto-section h4:after {
+    content:'';
+    display:block;
+    height:1px;
+    width:50px;
+    background-color:#88a919;;
+    text-align: center;
+    margin:15px auto 0;
+}
+
+.contacto-section p{
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
+ 
+ /* *********************************************************
+Copyright section
+********************************************************* */    
+       
+.copyright{text-align: center;}
+
+.copyright p a{ text-decoration: none;}
+
+.copyright p a:hover{ color:#88a919;}

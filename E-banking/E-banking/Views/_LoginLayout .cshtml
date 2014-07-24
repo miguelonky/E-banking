@@ -14,9 +14,10 @@
 	
 	<!-- Mobile Specific Metas
   ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
       @Styles.Render("~/Content/css")
-   
+  
     <!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="images/favicon.ico">
@@ -25,80 +26,50 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
     </head>
-<body class="page home-page">
+<body>
 
-    <!-- Primary Page Layout
-        ================================================== -->
-	
-    <!-- BEGIN WRAPPER -->
-    <div id="wrapper">
+ 
+    <div class="top-header">
 			
+        <div class="container">
+            <div class="row">
 			
-    <!-- BEGIN HEADER -->
-        <header id="header">
-				
-            <!--Top Header-->
-            <div id="top-header">
-                <div class="container">
-                    <div class="grid_12">
-							
-                        <!-- Begin Language Switcher -->
-							
-							
-							
-                        <!-- End Language Switcher -->
-							
-                        <div class="login-holder fright">
-                            <a href="#" class="signin" data-reveal-id="signin">Login</a>
-                        </div>
-                    </div>
+                <!-- Mobile Icon-->
+                <div class="mobile-icon" id="mobile-icon">
+                    <i class="fa fa-bars"></i>
                 </div>
-            </div>
-				
-            <!--Main Header-->
-            <div id="main-header">
-                <div class="container">
-                    <div class="grid_12">
-						
-                        <!-- BEGIN LOGO -->
-                        <div id="logo">
-                            <!-- Image based Logo-->
-                            <a href="index-2.html"><img src="~/Content/Style/Imagen/logo.png" alt=""/></a>
-                            
-								
-                            <!-- Text based Logo
-                                <h1><a href="index.html"><span>Optima</span>Sales</a></h1>
-                                <p class="tagline">optimize your business</p>
-                                -->
-								
-                        </div>
-                        <!-- END LOGO -->
-							
-                        <!-- BEGIN NAVIGATION -->
-                        <nav class="primary">
-                            <ul class="sf-menu">
-                                <li class="current-menu-item"><a href="#">Inicio</a>
+                <div class="col-sm-7">
+                    <div class="logo-container">
+                        <figure><a href="index-2.html"><img src="~/Content/Style/Imagen/logo.png" alt=""/></a></figure>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-sm-5">
+                    <nav class="menu-left">
+                        <ul class="main-menu">
+                            <li><a href="#">Inicio</a>
                                    
-                                </li>
-                                <li class="empty-item"><a href="#">Nosotros</a>
+                            </li>
+                            <li><a href="#">Nosotros</a>
                                     
-                                </li>
-                                <li class="empty-item"><a href="#">Oficinas y Cajeros</a>
+                            </li>
+                            <li><a href="#">Oficinas y Cajeros</a>
                                     
-                                </li>
+                            </li>
                                
-                                <li><a href="#">Contacto</a></li>
-                            </ul>
-                        </nav>
-                        <!-- END NAVIGATION -->
-							
-                    </div>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav>
                 </div>
+                
+								
             </div>
-				
-        </header>
+        </div>
+    </div>
+
           @RenderBody()
-    </div>    
+      
   
     
     
@@ -262,7 +233,6 @@
    
     @Scripts.Render("~/bundles/JS")
 
-   
-
+  
 </body>
     </html>

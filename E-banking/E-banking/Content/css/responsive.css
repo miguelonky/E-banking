@@ -1,0 +1,185 @@
+/* ----------------------------------------------------------------------------------------------
+    1200px Resolution
+---------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1200px){
+    
+}    
+
+/* ----------------------------------------------------------------------------------------------
+    990px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 990px){
+   
+    /*Contacténos section*/    
+    .contacto-section .col-sm-3{ width: 100%;} 
+    
+    .contacto-section p{
+        width: 55%;
+        margin: 0 auto;
+    }
+    
+     .top-header .mobile-menu{ display: block;}
+}
+    
+/* ----------------------------------------------------------------------------------------------
+    991px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 991px){
+    
+    /*Top Header*/  
+    .top-header .menu-left, .top-header .menu-right{display: none;}
+    
+    .top-header .mobile-menu{ display: block;}
+    
+    .top-header .col-sm-2  {width:100%;}
+    
+    .top-header .col-sm-5  {width:100%;} 
+}
+
+/* ----------------------------------------------------------------------------------------------
+    992px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 992px){
+    
+    /*Top Header*/  
+    .top-header .menu-left, .top-header .menu-right{text-align: center;}
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------
+    900px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 900px){
+    
+    /* Slider section */
+    .slider-section .slide-content{min-height: 10px;}
+
+    .slide-content h1{
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    .slide-content h1:after{
+        content: '';
+        display: none;
+    }
+
+    .slide-content p{display: none}
+    
+    .owl-theme .owl-controls .owl-buttons {display: none;}
+
+    .slide-content .btn-slide{
+        float: right;
+        margin-top: 15px;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------
+    775px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 775px){
+    
+    /* Slider section */
+    .slider-section .slide-content{display: none;}
+    
+    .owl-theme .owl-controls .owl-buttons {display: block;}
+}
+ 
+/* ----------------------------------------------------------------------------------------------
+    640px max and min 620px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 767px){
+
+    /* Servicios section */
+    .servicios-section .items-left{text-align: left;}
+    
+    .servicios-section  .items-left .servicios-items h4{
+        position: absolute;
+        margin-left: 90px;
+        margin-top: 17px;
+    }
+ 
+    .servicios-section .servicios-items{
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .servicios-section .items-left .fa{margin-left: 0px;}
+}
+    
+/* ----------------------------------------------------------------------------------------------
+    711px max and min 620px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 711px){
+    
+    /*Top Header - Moble*/  
+    .mobile-icon{display: block;}
+    
+    .top-header .mobile-menu{display: none;}
+    
+    .top-header .logo-container {
+         width: 45%;
+         text-align: right;
+     }
+    
+    .top-header .mobile-menu .main-menu li{
+    display: block;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+    }
+
+    .top-header .mobile-menu .main-menu li a {padding: 29px 1px;}
+
+    .top-header .mobile-menu .main-menu li:first-child{ border-top: 1px solid transparent;}
+    
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+    656px max and min 620px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 656px) {
+      
+      /* Servicios section */
+      .servicios-section .servicios-items{width: 60%;}
+}
+    
+/* ----------------------------------------------------------------------------------------------
+    640px max and min 620px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 640px) {
+    
+    /*Slider Section*/ 
+    .owl-theme .owl-controls .owl-buttons{display: none;}
+}
+
+
+/* ----------------------------------------------------------------------------------------------
+    552px max and min 620px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 552px) {
+    
+       /*Servicio Section*/ 
+      .servicios-section .servicios-items{width: 80%;}
+}
+   
+/* ----------------------------------------------------------------------------------------------
+    449px Resolution
+---------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 449px){
+
+    /*Contacténos section*/ 
+    .copyright{
+        width:80%;
+        margin: 0 auto;
+    }
+     
+    /* Servicios section */
+    .servicios-section .servicios-items{width: 90%;}
+
+}
+
+
