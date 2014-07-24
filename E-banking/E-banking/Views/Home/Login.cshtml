@@ -1,23 +1,40 @@
-﻿@{
+﻿<script src="/Scripts/JS/jquery-1.9.1.js"></script>
+@{
     ViewBag.Title = "Login";
     Layout = "~/Views/_LoginLayout .cshtml";
 }
-<br>
-<br>
 
 <center>
     <h2>BIENVENIDOS A E-BANKING PERSONAL</h2>
 
     <br>
     <br>
-    <div id="login-panel">
+    <div id="login">
+          <div>
+            <label>Nombre de usuario:</label>
+            <input type="text" name="usuario" id="usuario" value="Usuario" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre de usuario';}">
+            <label>Contraseña:</label>
+            <input type="text" name="contraseña" id="contraseña" value="Contraseña" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Contraseña';}">
+
+        </div>
+        <br />
+        <center>
+            <input type="submit" name="fsubmit" value="ENTRAR" onclick="submitForm('login-panel');return false;" />
+        </center>
+        <br>
+        <a href="http://localhost:55842/home/forgetPass">¿Olvidó su contraseña?</a>
+        <a href="http://localhost:55842/home/getacess">Solicite su acceso</a>
+
+    </div>
+
+    <div id="login-panel" >
   
 
         <div>
             <label>Nombre de usuario:</label>
-            <input type="text" name="usuario"  id="usuario" value="Usuario" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre de usuario';}">
+            <input type="text" name="usuario"  id="usuarioid" value="Usuario" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre de usuario';}">
             <label>Contraseña:</label>
-            <input type="text" name="contraseña" id="contraseña" value="Contraseña" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Contraseña';}">
+            <input type="text" name="contraseña" id="contraseñaid" value="Contraseña" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Contraseña';}">
 
         </div>
         <br />
@@ -31,7 +48,39 @@
     </div>
 
 </center>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#login-panel").hide()
+       
+        $("#login-link").click(function () {
+            $("#usuarioid").val('');
+            $("#contraseñaid").val('');
+            $("#login-panel").slideToggle( function () {
+                if ($("#login-panel").is(":visible"))
+                    $("#login-link").addClass("tag_on");
+                else
+                    $("#login-link").removeClass("tag_on");
+                $("#usuario").val('');
+                $("#contraseña").val('');
+
+            });
+        })
+    })
+    $(document).keydown(function (e) {
+        if (e.keyCode == 27) {
+            $("#login-panel").hide(10);
+            $("#login-link").removeClass("tag_on");
+
+        }
+    });
+
+    
+   
+</script>
+
+
 <script language="javascript" type="text/javascript">
+    
     var bSubmitted = 0;
     function submitForm(containerElement) {
         if (bSubmitted == 0) {

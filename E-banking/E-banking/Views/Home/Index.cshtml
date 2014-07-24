@@ -1,7 +1,59 @@
-﻿@{
+﻿<script src="/Scripts/JS/jquery-1.9.1.js"></script>
+
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/_PrincipalLayout.cshtml";
 }
+<div id="login-panel">
+
+
+    <div>
+        <label>Nombre de usuario:</label>
+        <input type="text" name="usuario" id="usuarioid" value="Usuario" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre de usuario';}">
+        <label>Contraseña:</label>
+        <input type="text" name="contraseña" id="contraseñaid" value="Contraseña" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Contraseña';}">
+
+    </div>
+    <br />
+    <center>
+        <input type="submit" name="fsubmit" value="ENTRAR" onclick="submitForm('login-panel');return false;" />
+    </center>
+    <br>
+    <a href="http://localhost:55842/home/forgetPass">¿Olvidó su contraseña?</a>
+    <a href="http://localhost:55842/home/getacess">Solicite su acceso</a>
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#login-panel").hide()
+        $("#login-link").click(function () {
+            $("#usuarioid").val('');
+            $("#contraseñaid").val('');
+            $("#usuarioid").val('Nombre de usuario');
+            $("#contraseñaid").val('Contraseña');
+            $("#login-panel").slideToggle(function () {
+                if ($("#login-panel").is(":visible"))
+                    $("#login-link").addClass("tag_on");
+                else
+                    $("#login-link").removeClass("tag_on");
+                $("#usuario").val('');
+                $("#contraseña").val('');
+
+            });
+        })
+    })
+    $(document).keydown(function (e) {
+        if (e.keyCode == 27) {
+            $("#login-panel").hide(10);
+            $("#login-link").removeClass("tag_on");
+
+        }
+    });
+
+
+
+</script>
+
 
 
 

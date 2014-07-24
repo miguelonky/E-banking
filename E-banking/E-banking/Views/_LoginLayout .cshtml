@@ -25,7 +25,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
     </head>
-<body class="page home-page">
+<body  id="cuerpo" class="page home-page">
 
     <!-- Primary Page Layout
         ================================================== -->
@@ -49,7 +49,7 @@
                         <!-- End Language Switcher -->
 							
                         <div class="login-holder fright">
-                            <a href="#" class="signin" data-reveal-id="signin">Login</a>
+                            <a id="login-link" title="Login"  class="">Login</a>
                         </div>
                     </div>
                 </div>
@@ -98,9 +98,10 @@
 				
         </header>
           @RenderBody()
+
     </div>    
   
-    
+   
     
     <section id="widgets">
 				<div class="indent">
@@ -139,6 +140,7 @@
                             
 						    <!-- END SOCIAL LINKS Widget -->
 						</div>
+
 					    <div class="grid_3">
 					        <div class="widget widget-social">
 					            <h4>Ultimos Tweest</h4>
@@ -263,6 +265,6 @@
     @Scripts.Render("~/bundles/JS")
 
    
-
 </body>
+
     </html>
