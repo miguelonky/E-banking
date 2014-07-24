@@ -139,6 +139,7 @@
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\Img\contact-bg.jpg" />
     <Content Include="Content\Img\logo.jpg" />
+    <Content Include="Content\Img\pattern.gif" />
     <Content Include="Content\Img\slide01.jpg" />
     <Content Include="Content\Img\slide02.jpg" />
     <Content Include="Content\Img\slide03.jpg" />
