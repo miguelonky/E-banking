@@ -2,19 +2,20 @@
 
 CREATE PROCEDURE sp_add_client 
 (@fname varchar(45), @lname varchar(45), @cedula char(11), @email varchar(100), 
-@phone char(10), @birth_date date, @password varchar(256), @role varchar(45), 
-@information varchar(100) output) 
+@phone char(10), @birth_date date, @role varchar(45), @information varchar(100) output) 
 AS
 BEGIN
 	DECLARE @id int
 	DECLARE @username VARCHAR(60)
+	DECLARE @password VARCHAR(32)
+	SET @password = 'E-banking01'
 	IF EXISTS(SELECT id FROM clients WHERE cedula = @cedula) 
 	BEGIN
-		SET @information = 'The cedula is already register';
+		SET @information = 'La cedula ya se encuetra registrado';
 	END
 	ELSE IF exists(SELECT id FROM clients WHERE email = @email) 
 	BEGIN
-		SET @information = 'The email is already register';
+		SET @information = 'El email ya se encuentra registrado';
 	END
 	ELSE 
 	BEGIN
@@ -25,7 +26,7 @@ BEGIN
 			
 			INSERT INTO users VALUES (dbo.create_username(@id), @password, @role, @id)
 		COMMIT TRANSACTION
-		SET @information = 'Client registered successful'
+		SET @information = 'Cliente registrado correctamente'
 	END
 END
 
@@ -40,17 +41,17 @@ BEGIN
 				DELETE FROM users WHERE userid = @id
 				DELETE FROM clients WHERE id = @id
 				COMMIT TRANSACTION
-				SET @information = 'Client deleted successful'
+				SET @information = 'Cliente eliminado correctamente'
 			END TRY
 			BEGIN CATCH
 				ROLLBACK
-				SET @information = 'An error occurred deleting the client: ' + ERROR_MESSAGE()
+				SET @information = 'Ha ocurrido un error eliminando al cliente: ' + ERROR_MESSAGE()
 			END CATCH
 	END
 
 	ELSE
 	BEGIN
-		SET @information = 'Client not found'
+		SET @information = 'Cliente no encontrado'
 	END
 END
 
@@ -71,7 +72,7 @@ BEGIN
 			
 				UPDATE users SET username = @username, role = @role WHERE userid = @id
 			COMMIT TRANSACTION
-			SET @information = 'Client updated successful'
+			SET @information = 'Cliente Actualizado Correctamente !!!'
 		END 
 	
 		ELSE
@@ -85,13 +86,13 @@ BEGIN
 				UPDATE users SET username = @username, password = @password, role = @role 
 				WHERE userid = @id
 			COMMIT TRANSACTION
-			SET @information = 'Client updated successful'
+			SET @information = 'Cliente Actualizado Correctamente !!!'
 		END
 	END
 
 	ELSE 
 	BEGIN
-		SET @information = 'The client doesnt exists'
+		SET @information = 'El cliente no existe'
 	END
 END
 

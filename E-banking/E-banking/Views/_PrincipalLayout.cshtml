@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Rodicon - WebSite</title>
+        <title>Home - E-Banking</title>
 
         <!-- Bootstrap core CSS -->
     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
@@ -98,11 +98,11 @@
                
                                 <nav class="menu-right">
                                     <ul class="main-menu" >
-                                        <li><a href="#">Home</a></li>
+                                        <li>@Html.ActionLink("Home", "Index")</li>
                                         <li><a href="#">Sobre Nosotros</a></li>
                                         <li><a href="#">Tarifario</a></li>
                                         <li><a href="#">Oficinas y Cajeros</a></li>
-                                        <li><a href="#">Contact&eacute;nos</a></li>
+                                        <li><a href="#contactos">Contact&eacute;nos</a></li>
                                     </ul>
                                 </nav>
                             </div><!-- End Menu Right-->
@@ -111,11 +111,11 @@
                             <div class="col-sm-12">
                                 <nav class="mobile-menu">
                                     <ul class="main-menu">
-                                        <li><a href="#">Home</a></li>
+                                        <li>@Html.ActionLink("Home", "Index")</li>
                                         <li><a href="#">Sobre Nosotros</a></li>
                                         <li><a href="#">Tarifario</a></li>
                                         <li><a href="#">Oficinas y Cajeros</a></li>
-                                        <li><a href="#">Contact&eacute;nos</a></li>
+                                        <li><a href="#contactos">Contact&eacute;nos</a></li>
                                     </ul>
                                 </nav>
                             </div><!-- End Menu Left-->
@@ -206,7 +206,7 @@
 </div><!-- End Servicios Section-->
 
 <!-- Conatcto Section-->
-<footer class="contacto-section cl-md-padding-both">
+<footer id="contactos" class="contacto-section cl-md-padding-both">
     <div class="container">
         
         <!--Header Section-->
@@ -228,7 +228,7 @@
                             <i class="fa fa-envelope"></i>
                         </div>
                         <h4>Email</h4>
-                        <p>info@rodicon.com.do</p>
+                        <p>info@e-banking.com.do</p>
                     </div>
                 </div> 
                          
@@ -257,8 +257,8 @@
                         <div class="icon">
                         <i class="fa fa-map-marker"></i>
                         </div>
-                        <h4>Direci&oacute;n</h4>
-                        <p>C/ Jiguemota esquina Eduado Vicioso No. 22, Bella Vista, Torre Rodicon piso 3, Sto. Dgo. D.N.</p>
+                        <h4>Direcci&oacute;n</h4>
+                        <p>Autopista las Americas KM 27, Sto. Dgo. S.D.E.</p>
                     </div>
                 </div> 
 
@@ -272,7 +272,7 @@
     <div class="container">
         <div class="row">
             <div class="colsm-12">
-                <p>© 2011 - <a href="#" class="hightlight">Rodicon</a>. Optimización  y diseño web, Soluciones GBH</p>
+                <p>© @DateTime.Now.Year - @Html.ActionLink("E-Banking", "Index", null, new { @class="hightlight"}). Todos los derechos reservados</p>
             </div>
         </div>
     </div>
