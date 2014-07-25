@@ -319,7 +319,7 @@ Servicios section
 
 .servicios-section .servicios-items .fa:hover{
     background-color: #ee7f01;
-    color: #88a919;;  
+    color: #88a919;
 }
 
 .servicios-section  .servicios-items h4{
@@ -410,7 +410,7 @@ Contacténos section
     display:block;
     height:1px;
     width:50px;
-    background-color:#88a919;;
+    background-color:#88a919;
     text-align: center;
     margin:15px auto 0;
 }

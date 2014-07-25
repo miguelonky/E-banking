@@ -60,7 +60,7 @@
     
 			
 			
-                    <!-- BEGIN HEADER -->
+       @*             <!-- BEGIN HEADER -->*@
                     <header id="header">
 				
                         <!--Top Header-->
@@ -69,7 +69,9 @@
                                 <div class="col-lg-12 ">
 							
                                     <div class="menu-left">
-                                        <a class="Log" title="Login" class="">Login</a>
+                                      
+                                        @RenderSection("seccion",false)
+                                         <!--<a class="Log" title="Login" >Login</a>-->
                                     </div>
                                 </div>
 
@@ -136,74 +138,22 @@
         
 
         <!--Servicios Section-->
-<div class="servicios-section cl-md-padding-both">
+<div class="servicios-section ">
     <div class="container">
        
        <!--Header Section-->
-        <div class="row">
+        <div class="row" >
             <div class="col-sm-12">
                 <div class="header-section">
-                    <h1>Servicios</h1>
-                    <span></span>
-                    <p>Donec ornare congue sem, quis scelerisque leo dictum porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sollicitudin ullamcorper massa, ut elementum nunc sollicitud quaerat! </p>
+                    @RenderSection("bienvenida", false)
+                               
                 </div>
             </div>
-        </div><!--End Header Section-->
-  
-        <!--Left Icons-->
-        <div class="row">
-            <div class="col-sm-6 items-left">
-               
-                <div class="servicios-items">
-                    <h4>Residential Construction</h4>
-                   
-                </div>
-                   
-                <div class="servicios-items"> 
-                    <h4>Forclosure Remodels</h4>
-                   
-                </div>
-                
-                 <div class="servicios-items">
-                    <h4>Commercial Construction</h4>
-                     
-                </div>
-                
-                 <div class="servicios-items">
-                    <h4>Construction Consultation</h4>
-                    
-                </div>
-                
-            </div><!-- End Left Icons-->
-        
-          <!--Right Icons-->
-            <div class="col-sm-6 items-right">
-               
-                <div class="servicios-items">
-                    
-                    <h4>Entretaiment Option</h4>
-                </div>
-                   
-                <div class="servicios-items">
-                    
-                    <h4>Structural Elements</h4>
-                </div>
-                
-                 <div class="servicios-items">
-                  
-                    <h4>Energy Features</h4>
-                </div>
-                
-                 <div class="servicios-items">
-                   
-                    <h4>Architectural Details</h4>
-                </div>
-            
-            </div><!-- End Right Icons-->
-            
-        </div>
+              </div><!--End Header Section-->
+                  </div>
     </div>
-</div><!-- End Servicios Section-->
+        @RenderSection("login", false)
+<!-- End Servicios Section-->
 
 <!-- Conatcto Section-->
 <footer id="contactos" class="contacto-section cl-md-padding-both">

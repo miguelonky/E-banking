@@ -20,5 +20,13 @@ namespace E_banking.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Login(string usuario, string contraseña)
+        {
+          
+
+            return View();
+        }
     }
 }
