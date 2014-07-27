@@ -140,10 +140,17 @@
     <Content Include="Content\css\responsive.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\Img\contact-bg.jpg" />
+    <Content Include="Content\Img\flecha.jpg" />
+    <Content Include="Content\Img\heading-bg.jpg" />
     <Content Include="Content\Img\logo.jpg" />
+    <Content Include="Content\Img\ribbon-button.png" />
     <Content Include="Content\Img\slide01.jpg" />
     <Content Include="Content\Img\slide02.jpg" />
     <Content Include="Content\Img\slide03.jpg" />
+    <Content Include="Content\Img\title-bg.png" />
+    <Content Include="Content\Img\title-left.png" />
+    <Content Include="Content\Img\widget-bg.gif" />
+    <Content Include="Content\Img\search-button.gif" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\fontawesome-webfont.eot" />

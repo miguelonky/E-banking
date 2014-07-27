@@ -61,64 +61,43 @@
 
                     <!-- BEGIN WRAPPER -->
                 @*             <!-- BEGIN HEADER -->*@
-                <header id="header">
+                <header>
 
                     <!--Top Header-->
                     <div id="top-header">
                         <div class="container">
-                            <div class="col-lg-12 ">
-
-                                <div class="menu-left">
-
-                                    @RenderSection("seccion", false)
-                                    <!--<a class="Log" title="Login" >Login</a>-->
+                            <div class="col-sm-4">
+                                <div class="logo-container">
+                                    <figure><a href="#"><img src="~/Content/Img/logo.jpg"></a></figure>
                                 </div>
+                            </div>
+
+                            <div class="col-lg-8 ">
+
+                                <div class="#">
+
+                                    <ul class="nav pull-right navbar-nav">
+                                        <li class="main-menu-top">@Html.ActionLink("Home", "Index")</li>
+                                        <li class="main-menu-top"><a href="#">Sobre Nosotros</a></li>
+                                        <li class="main-menu-top"><a href="#contactos">Contact&eacute;nos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <nav class="mobile-menu">
+                                    <ul class="nav pull-right navbar-nav">
+                                        <li class="main-menu-top"><a href="#">@Html.ActionLink("Home", "Index")</a></li>
+                                        <li class="main-menu-top"><a href="#">Sobre Nosotros</a></li>
+                                        <li class="main-menu-top"><a href="#contactos">Contact&eacute;nos</a></li>
+                                    </ul>
+                                </nav>
                             </div>
 
                         </div>
 
-                        <!--Menu Left-->
-                        <!--    <div class="col-sm-5">
-                                    <nav class="menu-left">
-                                        <ul class="main-menu">
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Proyectos</a></li>
-                                            <li><a href="#">Propiedad</a></li>
-                                        </ul>
-                                    </nav>
-                                </div> -->
-                        <!-- End Menu Left-->
-                        <!--Logo-->
-                        <div class="col-sm-4">
-                            <div class="logo-container">
-                                <figure><a href="#"><img src="~/Content/Img/logo.jpg"></a></figure>
-                            </div>
-                        </div><!-- End Logo Container-->
-                        <!--Menu Right-->
-                        <div class="col-sm-8">
-
-                            <nav class="menu-right">
-                                <ul class="main-menu">
-                                    <li>@Html.ActionLink("Home", "Index")</li>
-                                    <li><a href="#">Sobre Nosotros</a></li>
-                                    <li><a href="#">Tarifario</a></li>
-                                    <li><a href="#">Oficinas y Cajeros</a></li>
-                                    <li><a href="#contactos">Contact&eacute;nos</a></li>
-                                </ul>
-                            </nav>
-                        </div><!-- End Menu Right-->
                         <!--Mobile Menu-->
-                        <div class="col-sm-12">
-                            <nav class="mobile-menu">
-                                <ul class="main-menu">
-                                    <li>@Html.ActionLink("Home", "Index")</li>
-                                    <li><a href="#">Sobre Nosotros</a></li>
-                                    <li><a href="#">Tarifario</a></li>
-                                    <li><a href="#">Oficinas y Cajeros</a></li>
-                                    <li><a href="#contactos">Contact&eacute;nos</a></li>
-                                </ul>
-                            </nav>
-                        </div><!-- End Menu Left-->
+                     <!-- End Menu Left-->
 
                     </div>
                 </header>
@@ -126,108 +105,131 @@
         </div>
     </div>
 
+    <section class="cl-md-padding-both" id="header">
+
+        <div class="container">
+            <div class="col-sm-8">
+
+                <div class="container">
+                    <div class="form-group">
+                        <h1 class="h-set">E-Banking Transaciones</h1>
+                    </div>
+
+                    <div class="form-group">
+                        <nav class="menu-left">
+                            <ul class="nav pull-left navbar-nav">
+                                <li class="main-menu-top"><a href="#">Sobre Nosotros</a></li>
+                                <li class="main-menu-top"><a href="#">Mensajes</a></li>
+                                <li class="main-menu-top"><a href="#">Configurar</a></li>
+                                <li class="main-menu-top"><a href="#">Ayuda</a></li>
+                                <li class="main-menu-top"><a href="#contactos">Salir</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <!-- BEGIN SEARCH FORM -->
+                <form id="search-form" class="search-form" action="#">
+                    <input type="text" placeholder="Buscar ..." />
+                    <input type="submit" value="" />
+                </form>
+                <!-- END SEARCH FORM -->
+            </div>
+        </div>
+
+    </section>
+
     <!--Top Header-->
     <!--Body Section-->
     @RenderBody()
 
+    <div class="container">
 
+        <div class="main-section cl-lg-padding-both">
+            <div class="container">
+                <div class="col-sm-4">
+                    <div class="container">
 
-
-    <!--Servicios Section-->
-    <div class="servicios-section ">
-        <div class="container">
-
-            <!--Header Section-->
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="header-section">
-                        @RenderSection("bienvenida", false)
-
-                    </div>
-                </div>
-            </div><!--End Header Section-->
-        </div>
-    </div>
-    @RenderSection("login", false)
-    <!-- End Servicios Section-->
-    <!-- Conatcto Section-->
-    <footer id="contactos" class="contacto-section cl-md-padding-both">
-        <div class="container">
-
-            <!--Header Section-->
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="header-section">
-                        <h1>Contact&eacute;nos</h1>
-                        <span></span>
-                    </div>
-                </div>
-            </div><!--End Header Section-->
-            <!--Contacto Content-->
-            <div class="row">
-
-                <div class="col-sm-3">
-                    <div class="servicios-items">
-                        <div class="icon">
-                            <i class="fa fa-envelope"></i>
+                        <div class="sidebar">
+                            <div class="sidebar-left">
+                                <label class="label-menu">Transaciones</label>
+                            </div>
                         </div>
-                        <h4>Email</h4>
-                        <p>info@e-banking.com.do</p>
-                    </div>
-                </div>
+                        
+                        <ul class="menu-sidebar menu-right">
 
-                <div class="col-sm-3">
-                    <div class="servicios-items">
-                        <div class="icon">
-                            <i class="fa fa-phone"></i>
+                            <li><a href="#">Pagos</a></li>
+                            <li><a href="#">Transferencias</a></li>
+                            <li><a href="#">Desenbolsos</a></li>
+                        </ul>
+
+                        <div class="sidebar">
+                            <div class="sidebar-left">
+                                <label class="label-menu">Solicitudes</label>
+                            </div>
                         </div>
-                        <h4>Tel&eacute;fono</h4>
-                        <p>809 - 364 - 2118</p>
-                    </div>
-                </div>
 
-                <div class="col-sm-3">
-                    <div class="servicios-items">
-                        <div class="icon">
-                            <i class="fa fa-print"></i>
+                   
+                        <ul class="menu-sidebar">
+
+                            <li><a href="#">Solicitudes</a></li>
+                            <li><a href="#">Beneficiarios</a></li>
+                            <li><a href="#">Millas E-banking</a></li>
+                        </ul>
+                        <div class="sidebar">
+                            <div class="sidebar-left">
+                                <label class="label-menu">Consultas</label>
+                            </div>
                         </div>
-                        <h4>Fax</h4>
-                        <p>809 - 532 - 0954</p>
+                        <ul class="menu-sidebar">
+
+                            <li><a href="#">Cuentas</a></li>
+                            <li><a href="#">Tarjetas</a></li>
+                            <li><a href="#">Pr&eacute;stamos</a></li>
+                            <li><a href="#">Certificados</a></li>
+                        </ul>
                     </div>
+
                 </div>
 
-                <div class="col-sm-3">
-                    <div class="servicios-items">
-                        <div class="icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <h4>Direcci&oacute;n</h4>
-                        <p>Autopista las Americas KM 27, Sto. Dgo. S.D.E.</p>
-                    </div>
-                </div>
+                <div class="col-sm-8">
+                    
+                        @RenderSection("BankSection", false)
+                    
 
-            </div><!-- Contacto Content-->
-
-        </div>
-    </footer><!-- End Conatcto Section-->
-    <!-- Copyright Section-->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="colsm-12">
-                    <p>© @DateTime.Now.Year - @Html.ActionLink("E-Banking", "Index", null, new { @class = "hightlight" }). Todos los derechos reservados</p>
                 </div>
             </div>
         </div>
-    </div><!-- End Copyright Section-->
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    </div>
 
 
-    <!-- Owl js-->
-    <script src="~/Scripts/owl-carousel/owl.carousel.js"></script>
+        <!-- End Servicios Section-->
+        <!-- Conatcto Section-->
+        <footer id="contactos" class="contacto-section cl-md-padding-both">
+            <div class="container">
 
-    <!--  Custum jQuery  -->
-    <script src="~/Scripts/custom.js"></script>
+            </div>
+
+        </footer><!-- End Conatcto Section-->
+        <!-- Copyright Section-->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="colsm-12">
+                        <p>© @DateTime.Now.Year - @Html.ActionLink("E-Banking", "Index", null, new { @class = "hightlight" }). Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Copyright Section-->
+        <script src="~/Scripts/bootstrap.min.js"></script>
+
+
+        <!-- Owl js-->
+        <script src="~/Scripts/owl-carousel/owl.carousel.js"></script>
+
+        <!--  Custum jQuery  -->
+        <script src="~/Scripts/custom.js"></script>
 
 
 
