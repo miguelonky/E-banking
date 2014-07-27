@@ -1,9 +1,60 @@
-﻿<script src="/Scripts/JS/jquery-1.9.1.js"></script>
-
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/_PrincipalLayout.cshtml";
 }
+
+@section seccion{
+            <div class="container">
+            <!-- Collapsable nav bar -->
+            <!-- Your site name for the upper left corner of the site -->
+            <!-- Start of the nav bar content -->
+            
+                <!-- Other nav bar content -->
+                <!-- The drop down menu -->
+                <ul class="nav pull-right navbar-nav">
+                        <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">Log In <strong class="caret"></strong></a>
+
+                        <div class="dropdown-menu" style="padding: 10px;min-width:240px;">
+
+
+                            <form action="" method="post" role="form" class="form-horizontal">
+
+                                <input class="form-control" id="inputUsuario" placeholder="Usuario" type="text" style="margin-bottom:.5em" required>
+
+                                <input class="form-control" id="inputContraseña" placeholder="Contraseña" type="password" style="margin-bottom:.5em" required>
+
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Recordarme</label>
+                                </div>
+
+                                <input class="btn btn-primary" style="margin-top:.75em;width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Entrar">
+                            </form>
+
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+}
+
+
+
+         
+<script >
+    $(document).ready(function () {
+        // Setup drop down menu
+        $('.dropdown-toggle').dropdown();
+
+        // Fix input element click problem
+        $('.dropdown input, .dropdown label').click(function (e) {
+            e.stopPropagation();
+        });
+    });
+
+</script>
 
 
 
