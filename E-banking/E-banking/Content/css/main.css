@@ -21,11 +21,16 @@ General Styles
 
 body {
     
-     background: #fcfdf9 url(~/Content/Img/pattern.gif);
+     background: white;
 }
 
 .Log {
     color: #115b87 !important;
+}
+
+.sinal-green{
+ 
+    background-image: url(../Img/flecha.png);
 }
 
 
@@ -144,7 +149,8 @@ body {
 
  .menu-scroll{
     /*position: fixed;*/
-      background: #fcfdf9 url(~/Content/Img/pattern.gif);
+   
+      background-image: url(../Img/pattern.gif);
     width: 100%;
  }
 
