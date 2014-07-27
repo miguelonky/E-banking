@@ -13,15 +13,23 @@ namespace E_banking.Models
         protected DataSet _reportArguments;
         protected DataTable _reportTable;
 
-        public virtual void Autenticar(string usuario, string contraseña)
+        public virtual bool Autenticar(string usuario, string contraseña)
         {
-            var da = new SqlDataAccess("UseConfig");
+             bool autenticado = false;
+             /* string query = string.Format("SELECT * FROM [User] WHERE usuario = '{0}' AND contraseña = '{1}'", usuario, contraseña);
 
+             SqlCommand cmd = new SqlCommand(query, conn);
+             conn.Open();
+             SqlDataReader sdr = cmd.ExecuteReader();
+             authenticato = sdr.HasRows;  */
+
+            var da = new SqlDataAccess("UseConfig");
             da.SetProc("Autenticar");
             da.AddParameter("@usuario", usuario);
             da.AddParameter("@contraseña", contraseña);
             da.ExecuteDataSet();
 
+             return autenticado;
 
 
         }
