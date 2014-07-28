@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "~/Views/_PrincipalLayout.cshtml";
+    ViewBag.Title = "AddUsers";
+}
+
+<h1 class="container">Añadir Usuarios</h1>
+<form method="post">
+
+    <fieldset class="row">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4 text-center">
+            <legend>Añadir nuevo usuario</legend>
+            <div class="form-group">
+                <label for="fname">Nombre</label>
+                <input class="form-control" type="text" id="fname" name="fname" placeholder="Nombre"/>
+            </div>
+            <div class="form-group">
+                <label for="lname">Apellido</label>
+                <input class="form-control" type="text" id="lname" name="lname" placeholder="Apellido" />
+            </div>
+            <div class="form-group">
+                <label for="cedula">Cedula</label>
+                <input class="form-control" type="text" id="cedula" name="cedula" placeholder="Cedula" />
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input class="form-control" type="text" id="phone" name="phone" placeholder="Teléfono" />
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Fecha de Nacimiento</label>
+                <input class="form-control" type="date" id="birthdate" name="birthdate" placeholder="Fecha de Nacimiento" />
+            </div>
+            <div class="form-group">
+                <label for="role">Rol</label>
+                <select class="form-control" id="role" name="role">
+                    <option value="-1">Seleccione</option>
+                    <option value="Administrador">Administrador</option>
+                    <option value="Usuario">Usuario</option>
+                </select>
+            </div>
+             <div class="form-group">
+                <input class="btn btn-success" type="submit" value="Registrar" />
+            </div>
+        </div>
+    </fieldset>
+
+</form>

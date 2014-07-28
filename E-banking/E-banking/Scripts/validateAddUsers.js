@@ -1,0 +1,5 @@
+function validateUser() {
+	$('fname').validate(
+		
+	);
+}

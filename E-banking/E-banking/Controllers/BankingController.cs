@@ -16,5 +16,9 @@ namespace E_banking.Controllers
             return View();
         }
 
+        public ActionResult AddUsers()
+        {
+            return View();
+        }
     }
 }

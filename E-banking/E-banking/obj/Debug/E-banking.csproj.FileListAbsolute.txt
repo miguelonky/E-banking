@@ -90,3 +90,33 @@ C:\Users\Lhernandez\Documents\E-Banking\E-banking\E-banking\bin\System.Web.WebPa
 C:\Users\Lhernandez\Documents\E-Banking\E-banking\E-banking\obj\Debug\E-banking.dll
 C:\Users\Lhernandez\Documents\E-Banking\E-banking\E-banking\obj\Debug\E-banking.pdb
 C:\Users\Lhernandez\Documents\E-Banking\E-banking\E-banking\obj\Debug\E-banking.csprojResolveAssemblyReference.cache
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\E-banking.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\E-banking.pdb
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\Antlr3.Runtime.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\EntityFramework.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\Newtonsoft.Json.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Net.Http.Formatting.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.Http.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.Http.WebHost.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.Mvc.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.Optimization.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.Providers.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.Razor.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.Razor.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\WebGrease.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\EntityFramework.xml
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\Newtonsoft.Json.xml
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Net.Http.Formatting.xml
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.Http.xml
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.Http.WebHost.xml
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.Mvc.xml
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.Razor.xml
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.xml
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.Razor.xml
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\obj\Debug\E-banking.csprojResolveAssemblyReference.cache
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\obj\Debug\E-banking.dll
+C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-Banking\E-banking\E-banking\obj\Debug\E-banking.pdb
