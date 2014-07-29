@@ -3,33 +3,103 @@
     Layout = "~/Views/_bankingLayout.cshtml";
 }
 
-@section BankSection{
+@section TitlePage{
 
-<h1 class="h-bank">Buenos D&iacute;as Leonal Hern&aacute;ndez</h1>
-    <hr />
+<h1 class="h-set">E-Banking Home Aplication</h1>
+
+}
+
+@section BankHome{
+
+
+    <div class="main-section cl-lg-padding-both">
+        <div class="container">
+            <div class="col-sm-4">
+                <div class="container">
+
+                    <div class="sidebar">
+                        <div class="sidebar-left">
+                            <label class="label-menu">Transaciones</label>
+                        </div>
+                    </div>
+
+                    <ul class="menu-sidebar menu-right">
+
+                        <li onclick="showPayment()">
+                            <a href="#">Pagos</a>
+                            <ul class="menu-sidebar menu-right" id="sub-menu">
+
+                                <li><a href="#">Expreso</a></li>
+                                <li><a href="#">Recurrente</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Transferencias</a></li>
+                        <li><a href="#">Desenbolsos</a></li>
+                    </ul>
+
+                    <div class="sidebar">
+                        <div class="sidebar-left">
+                            <label class="label-menu">Solicitudes</label>
+                        </div>
+                    </div>
+
+
+                    <ul class="menu-sidebar">
+
+                        <li><a href="#">Solicitudes</a></li>
+                        <li><a href="#">Beneficiarios</a></li>
+                        <li><a href="#">Millas E-banking</a></li>
+                    </ul>
+                    <div class="sidebar">
+                        <div class="sidebar-left">
+                            <label class="label-menu">Consultas</label>
+                        </div>
+                    </div>
+                    <ul class="menu-sidebar">
+
+                        <li><a href="#">Cuentas</a></li>
+                        <li><a href="#">Tarjetas</a></li>
+                        <li><a href="#">Pr&eacute;stamos</a></li>
+                        <li><a href="#">Certificados</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-sm-8">
+                <h1 class="h-bank">Buenos D&iacute;as Leonal Hern&aacute;ndez</h1>
+                <hr />
+                <table class="table table-striped">
+                    <thead class="#">
+                    <td>Alias</td>
+                    <td>N&uacute;mero</td>
+                    <td>Tipo</td>
+                    <td>Balance</td></thead>
+
+                    <tbody>
+                        <tr>
+                            <td>bpd</td>
+                            <td>38449400</td>
+                            <td>Ahorro</td>
+                            <td>1,500.00</td>
+                        </tr>
+                        <tr>
+                            <td>bpd</td>
+                            <td>38449400</td>
+                            <td>Ahorro</td>
+                            <td>1,500.00</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
     
-    <table class="table table-striped">
-    <thead class="#"><td>Alias</td><td>N&uacute;mero</td><td>Tipo</td><td>Balance</td></thead>
-   
-    <tbody>
-        <tr>
-            <td>bpd</td>
-            <td>38449400</td>
-            <td>Ahorro</td>
-            <td>1,500.00</td>
-        </tr>
-        <tr>
-            <td>bpd</td>
-            <td>38449400</td>
-            <td>Ahorro</td>
-            <td>1,500.00</td>
-        </tr>
-    </tbody>
-  
-</table>
-
-
-
 
 
 }

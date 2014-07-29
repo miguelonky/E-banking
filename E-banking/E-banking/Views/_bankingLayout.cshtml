@@ -75,7 +75,7 @@
                             <div class="col-lg-8 ">
 
                                 <div class="#">
-
+                                    
                                     <ul class="nav pull-right navbar-nav">
                                         <li class="main-menu-top">@Html.ActionLink("Home", "Index")</li>
                                         <li class="main-menu-top"><a href="#">Sobre Nosotros</a></li>
@@ -112,17 +112,20 @@
 
                 <div class="container">
                     <div class="form-group">
-                        <h1 class="h-set">E-Banking Transaciones</h1>
+
+                        @RenderSection("TitlePage", false)
+                      
                     </div>
 
                     <div class="form-group">
+
                         <nav class="menu-left">
                             <ul class="nav pull-left navbar-nav">
                                 <li class="main-menu-top"><a href="#">Sobre Nosotros</a></li>
                                 <li class="main-menu-top"><a href="#">Mensajes</a></li>
                                 <li class="main-menu-top"><a href="#">Configurar</a></li>
                                 <li class="main-menu-top"><a href="#">Ayuda</a></li>
-                                <li class="main-menu-top"><a href="#contactos">Salir</a></li>
+                                <li class="main-menu-top"><a href="~/Home/Index.cshtml">Salir</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -146,62 +149,10 @@
 
     <div class="container">
 
-        <div class="main-section cl-lg-padding-both">
-            <div class="container">
-                <div class="col-sm-4">
-                    <div class="container">
+        @RenderSection("BankHome", false)
 
-                        <div class="sidebar">
-                            <div class="sidebar-left">
-                                <label class="label-menu">Transaciones</label>
-                            </div>
-                        </div>
-                        
-                        <ul class="menu-sidebar menu-right">
-
-                            <li><a href="#">Pagos</a></li>
-                            <li><a href="#">Transferencias</a></li>
-                            <li><a href="#">Desenbolsos</a></li>
-                        </ul>
-
-                        <div class="sidebar">
-                            <div class="sidebar-left">
-                                <label class="label-menu">Solicitudes</label>
-                            </div>
-                        </div>
-
-                   
-                        <ul class="menu-sidebar">
-
-                            <li><a href="#">Solicitudes</a></li>
-                            <li><a href="#">Beneficiarios</a></li>
-                            <li><a href="#">Millas E-banking</a></li>
-                        </ul>
-                        <div class="sidebar">
-                            <div class="sidebar-left">
-                                <label class="label-menu">Consultas</label>
-                            </div>
-                        </div>
-                        <ul class="menu-sidebar">
-
-                            <li><a href="#">Cuentas</a></li>
-                            <li><a href="#">Tarjetas</a></li>
-                            <li><a href="#">Pr&eacute;stamos</a></li>
-                            <li><a href="#">Certificados</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="col-sm-8">
-                    
-                        @RenderSection("BankSection", false)
-                    
-
-                </div>
-            </div>
-        </div>
     </div>
+
 
 
         <!-- End Servicios Section-->
@@ -230,6 +181,34 @@
 
         <!--  Custum jQuery  -->
         <script src="~/Scripts/custom.js"></script>
+
+    <script>
+        var activa = 0;
+
+        $(document).ready(function () {
+
+            $('#sub-menu').hide();
+            
+
+        });
+
+        function showPayment() {
+
+            if (activa == 0) {
+
+                $('#sub-menu').show();
+                activa = 1
+
+            } else {
+                $('#sub-menu').hide();
+                activa = 0;
+            }
+                
+
+        }
+       
+
+    </script>
 
 
 
