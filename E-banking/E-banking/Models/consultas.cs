@@ -24,12 +24,14 @@ namespace E_banking.Models
              authenticato = sdr.HasRows;  */
 
             var da = new SqlDataAccess("UseConfig");
-            da.SetProc("Autenticar");
-            da.AddParameter("@usuario", usuario);
-            da.AddParameter("@contraseña", contraseña);
-            da.ExecuteDataSet();
+            da.SetProc("LoginValidation");
+            da.AddParameter("@User", usuario);
+            da.AddParameter("@password", contraseña);
+            _reportTable = da.ExecuteDataSet().Tables[0];
 
-             return autenticado;
+           Boolean valor = bool.Parse(_reportTable.Rows[0]["validar"].ToString());
+
+           return valor;
 
 
         }

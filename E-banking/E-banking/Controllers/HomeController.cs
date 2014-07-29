@@ -41,15 +41,15 @@ namespace E_banking.Controllers
             //no eh echo mas porque no eh creado la base de datos aun 
             string user = usuario;
             string pass = contraseña;
-
-            /*if (Cs.Autenticar(user, pass))
+            bool vali = Cs.Autenticar(user, pass);
+            if (vali)
             {
-                FormsAuthentication.SetAuthCookie(user, true);
-                return RedirectToAction("index", "Cliente");
+                //FormsAuthentication.SetAuthCookie(user, true);
+                return RedirectToAction("Home", "HomeBank");
             }
             {
               ViewBag.error = "Usuario o contraseña incorrecta";
-            }*/
+            }
            
             return View();
         }
