@@ -17,6 +17,31 @@ white        #FFF
 General Styles
 ********************************************************* */
 
+.error {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.error h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.error > p,
+.error > ul {
+  margin-bottom: 0;
+}
+.error > p + p {
+  margin-top: 5px;
+}
+
+.error hr {
+  border-top-color: #e4b9c0;
+}
+
 *,h1,h2,h3 {font-family: 'Roboto', sans-serif;}
 
 .search-form input[type="text"] {
