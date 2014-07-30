@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.Mvc;
 
 namespace E_banking.Controllers
@@ -10,12 +11,12 @@ namespace E_banking.Controllers
     {
         //
         // GET: /Banking/
-
+        [Authorize]
         public ActionResult HomeBank()
         {
             return View();
         }
-
+        [Authorize]
         public ActionResult AddUsers()
         {
             return View();

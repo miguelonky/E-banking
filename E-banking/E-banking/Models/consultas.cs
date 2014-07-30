@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -34,6 +35,19 @@ namespace E_banking.Models
            return valor;
 
 
+        }
+
+        public virtual DataTable ViewAccounts(int client)
+        {
+            var da = new SqlDataAccess("UseConfig");
+            da.SetProc("searchAccount");
+            da.AddParameter("@clientId", client);
+            _reportTable = da.ExecuteDataSet().Tables[0];
+
+           
+            
+
+            return _reportTable;
         }
     }
 }

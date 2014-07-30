@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace E_banking.Controllers
 {
@@ -44,8 +45,8 @@ namespace E_banking.Controllers
             bool vali = Cs.Autenticar(user, pass);
             if (vali)
             {
-                //FormsAuthentication.SetAuthCookie(user, true);
-                return RedirectToAction("Home", "HomeBank");
+                FormsAuthentication.SetAuthCookie(usuario, true);
+                return RedirectToAction("HomeBank", "Banking");
             }
             {
               ViewBag.error = "Usuario o contraseña incorrecta";
