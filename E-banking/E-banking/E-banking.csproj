@@ -203,6 +203,9 @@
   <ItemGroup>
     <Content Include="Views\Home\AddUsers.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Banking\Payment.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

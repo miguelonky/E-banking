@@ -16,7 +16,7 @@ namespace E_banking.Models
 
         public virtual bool Autenticar(string usuario, string contraseña)
         {
-             bool autenticado = false;
+             
              /* string query = string.Format("SELECT * FROM [User] WHERE usuario = '{0}' AND contraseña = '{1}'", usuario, contraseña);
 
              SqlCommand cmd = new SqlCommand(query, conn);
