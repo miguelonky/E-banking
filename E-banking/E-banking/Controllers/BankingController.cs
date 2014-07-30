@@ -21,7 +21,7 @@ namespace E_banking.Controllers
         {
             return View();
         }
-        public ActionResult Payment(int id = 0)
+        public ActionResult Payment(string id )
         {
             ViewBag.id = id;
 
