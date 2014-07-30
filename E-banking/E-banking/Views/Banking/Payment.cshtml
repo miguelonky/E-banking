@@ -1,14 +1,137 @@
 ﻿@{
     ViewBag.Title = "Payment";
-    Layout = "~/Views/_bankingLayout.cshtml";
+    Layout = "~/Views/Shared/_PrincipalBanking.cshtml";
+
 }
 
 @if (ViewBag.id==1)
 {
-<h2>Payment</h2>
+   @section main {
+    <h1 class="h-bank">Pago Expreso</h1>   
+ <form>
+    <div>
+        <label>Beneficiario:</label>
+        <input type="text" />
+
+    </div>
+    <div>
+        <label>$ : Monto a pagar</label>
+        <span class="input-mini uneditable-input">Monto a pagar</span>
+
+    </div>
+
+    <div>
+        <hr>
+    </div>
+
+    <div>
+        <label>Desde cuenta</label>
+        <select>
+            <option>Selecione una cuenta</option>
+        </select>
+
+    </div>
+
+     <div>
+         <label>$</label>
+         <input type="text" />
+
+     </div>
+     <div>
+     <label>Balance Disponible</label>
+     <input type="text" />
+
+     </div>
+       <hr>
+     <div>
+         <label>Fecha de pago:</label>
+         <input type="text" />
+
+     </div>
+     <div>
+         <label>Descripción:</label>
+         <textarea rows="4" cols="20" >
+             </textarea>
+         
+              </div>
+       <div >
+           <input type="button" value="Cancelar" />
+           <input type="button" value="Refrescar"/>
+           <input type="submit" value="Guardar">
+       </div>
+
+
+</form>
+
+       
+       
+        } 
+    
+     
+
 }
 
 @if (ViewBag.id==2)
 {
-<h2>Miguelonky</h2>
+@section main {
+    <h1 class="h-bank">Pago Recurrente</h1> 
+<form>
+    <div>
+        <label>Beneficiario:</label>
+        <select>
+            <option>Selecione un Beneficiario</option>
+        </select>
+
+
+    </div>
+    <div>
+        <label>$ : Monto a pagar</label>
+        <input type="text" />
+
+    </div>
+
+    <div>
+        <hr>
+    </div>
+
+    <div>
+        <label>Desde cuenta</label>
+        <select>
+            <option>Selecione una cuenta</option>
+        </select>
+
+    </div>
+
+    <div>
+        <label>$</label>
+        <input type="text" />
+
+    </div>
+    <div>
+        <label>Balance Disponible</label>
+        <input type="text" />
+
+    </div>
+    <hr>
+    <div>
+        <label>Fecha de pago:</label>
+        <input type="text" />
+
+    </div>
+    <div>
+        <label>Descripción:</label>
+        <textarea rows="4" cols="20"></textarea>
+        <input type="checkbox" />
+        <label>Enviar comprobante al beneficiario</label>
+    </div>
+    <div>
+        <input type="button" value="Cancelar" />
+        <input type="button" value="Refrescar" />
+        <input type="submit" value="Guardar">
+    </div>
+
+
+</form>
+       
+        } 
 }
