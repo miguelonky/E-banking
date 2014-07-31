@@ -35,7 +35,27 @@ namespace E_banking.Controllers
             ViewBag.id = id;
 
 
-                        return View();
+            return View();
+        }
+
+        [Authorize, HttpPost]
+        public ActionResult AddUsers(string fname, string lname, string cedula, string email, string phone, string birthdate, string role) {
+            Cliente cliente = new Cliente(fname, lname, cedula, email, phone, birthdate, role);
+            cliente.AddClient(cliente);
+            return RedirectToAction("HomeBank", "Banking");
+        }
+
+        [Authorize]
+        public ActionResult ChangePassword() {
+            
+            return View();
+        }
+
+        [Authorize, HttpPost]
+        public ActionResult ChangePassword(string password)
+        {
+
+            return View();
         }
 
         //public ActionResult viewAccounts()
