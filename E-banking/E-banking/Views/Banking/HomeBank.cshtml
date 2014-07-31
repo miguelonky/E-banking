@@ -1,4 +1,11 @@
-﻿@{
+﻿
+
+@*
+@Model E_banking.Models.consultas
+@model E_banking.Models.consultas*@
+@model IList<E_banking.Account>
+
+@{
     ViewBag.Title = "HomeBank";
     Layout = "~/Views/_bankingLayout.cshtml";
 }
@@ -78,18 +85,17 @@
                     <td>Balance</td></thead>
 
                     <tbody>
-                        <tr>
-                            <td>bpd</td>
-                            <td>38449400</td>
-                            <td>Ahorro</td>
-                            <td>1,500.00</td>
-                        </tr>
-                        <tr>
-                            <td>bpd</td>
-                            <td>38449400</td>
-                            <td>Ahorro</td>
-                            <td>1,500.00</td>
-                        </tr>
+                        @foreach (var accoun in Model)
+                        {
+                          <tr>
+                            <td>@accoun._Alias</td>
+                            <td>@accoun._AccountNumber</td>
+                            <td>@accoun._Type</td>
+                            <td>@accoun._Balance</td>
+                         </tr>
+                        } 
+                    
+                       
                     </tbody>
 
                 </table>

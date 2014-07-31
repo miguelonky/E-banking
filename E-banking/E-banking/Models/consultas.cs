@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net;
 using System.Web;
+using System.Web.Security;
 
 namespace E_banking.Models
 {
@@ -13,16 +15,16 @@ namespace E_banking.Models
         protected DataSet _reportFilterTable;
         protected DataSet _reportArguments;
         protected DataTable _reportTable;
+        public int id;
+        public List<Account> accounts;
 
+        public consultas()
+        {
+            accounts = new List<Account>();
+        }
+        ClientInfo clInfo = new ClientInfo();
         public virtual bool Autenticar(string usuario, string contraseña)
         {
-             
-             /* string query = string.Format("SELECT * FROM [User] WHERE usuario = '{0}' AND contraseña = '{1}'", usuario, contraseña);
-
-             SqlCommand cmd = new SqlCommand(query, conn);
-             conn.Open();
-             SqlDataReader sdr = cmd.ExecuteReader();
-             authenticato = sdr.HasRows;  */
 
             var da = new SqlDataAccess("UseConfig");
             da.SetProc("LoginValidation");
@@ -31,33 +33,48 @@ namespace E_banking.Models
             _reportTable = da.ExecuteDataSet().Tables[0];
 
             Boolean valor = bool.Parse(_reportTable.Rows[0]["validar"].ToString());
-            int id = int.Parse(_reportTable.Rows[0]["ClientID"].ToString());
-            ViewAccounts(id);
+            
+            id = int.Parse(_reportTable.Rows[0]["ClientID"].ToString());
+            
 
             return valor;
 
 
         }
 
-        public virtual DataTable ViewAccounts(int client)
+        public virtual List<Account> ViewAccounts()
         {
+           string cliente = HttpContext.Current.User.Identity.Name;;
             var da = new SqlDataAccess("UseConfig");
-            da.SetProc("searchAccount");
-            da.AddParameter("@clientId", client);
+            da.SetProc("searchAccounts");
+            da.AddParameter("@UserName", cliente);
             _reportTable = da.ExecuteDataSet().Tables[0];
 
-            List<string> accounts = new List<string>();
+            
 
             int row = _reportTable.Rows.Count;
 
             for (int x = 0; x < _reportTable.Rows.Count; x++)
             {
-                accounts.Add(_reportTable.Rows[x]["account_number"].ToString());
+                Account accountList = new Account();
+
+                accountList._Id = int.Parse(_reportTable.Rows[x]["id"].ToString());
+                accountList._Alias = _reportTable.Rows[x]["type"].ToString();
+                accountList._AccountNumber = _reportTable.Rows[x]["account_number"].ToString();
+                accountList._Type = _reportTable.Rows[x]["type"].ToString();
+                accountList._Balance = _reportTable.Rows[x]["balance"].ToString();
+                accountList._BalanceAvailable = _reportTable.Rows[x]["balance_available"].ToString();
+
+                accounts.Add(accountList);
+
+
             }
 
 
-            return _reportTable;
+            return accounts;
         }
+
+
     }
 
 }

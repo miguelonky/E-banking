@@ -21,8 +21,7 @@ namespace E_banking.Controllers
 
         //objeto de la clase modelo de consultas
         consultas Cs = new consultas();
-
-
+       
         //
         // GET: /TestView/
 
@@ -46,6 +45,8 @@ namespace E_banking.Controllers
             if (vali)
             {
                 FormsAuthentication.SetAuthCookie(usuario, false);
+                //Cs.ViewAccounts(Cs.getId(user, pass));
+
                 return RedirectToAction("HomeBank", "Banking");
             }
             {
