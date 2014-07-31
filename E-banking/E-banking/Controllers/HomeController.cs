@@ -45,7 +45,7 @@ namespace E_banking.Controllers
             bool vali = Cs.Autenticar(user, pass);
             if (vali)
             {
-                FormsAuthentication.SetAuthCookie(usuario, true);
+                FormsAuthentication.SetAuthCookie(usuario, false);
                 return RedirectToAction("HomeBank", "Banking");
             }
             {

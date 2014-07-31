@@ -58,7 +58,6 @@ C:\Users\lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.We
 C:\Users\lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\System.Web.WebPages.Razor.xml
 C:\Users\lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\obj\Debug\E-banking.dll
 C:\Users\lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\obj\Debug\E-banking.pdb
-C:\Users\lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\obj\Debug\E-banking.csprojResolveAssemblyReference.cache
 C:\Users\Lhernandez\Documents\E-Banking\E-banking\E-banking\bin\E-banking.dll.config
 C:\Users\Lhernandez\Documents\E-Banking\E-banking\E-banking\bin\E-banking.dll
 C:\Users\Lhernandez\Documents\E-Banking\E-banking\E-banking\bin\E-banking.pdb
@@ -150,3 +149,4 @@ C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-banking\E-banki
 C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-banking\E-banking\obj\Debug\E-banking.csprojResolveAssemblyReference.cache
 C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-banking\E-banking\obj\Debug\E-banking.dll
 C:\Users\Erick\Documents\Visual Studio 2012\Projects\E-Banking\E-banking\E-banking\obj\Debug\E-banking.pdb
+C:\Users\Lhernandez\Documents\GitHub\E-Banking\E-banking\E-banking\bin\E-banking.dll.config

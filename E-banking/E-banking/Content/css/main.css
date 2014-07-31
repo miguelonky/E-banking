@@ -16,6 +16,11 @@ white        #FFF
 
 General Styles
 ********************************************************* */
+.btn-Backgraound {
+    background: #115b87 !important;
+    color: white !important;
+}
+
 
 .error {
   padding: 15px;

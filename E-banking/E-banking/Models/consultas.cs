@@ -30,9 +30,11 @@ namespace E_banking.Models
             da.AddParameter("@password", contraseña);
             _reportTable = da.ExecuteDataSet().Tables[0];
 
-           Boolean valor = bool.Parse(_reportTable.Rows[0]["validar"].ToString());
+            Boolean valor = bool.Parse(_reportTable.Rows[0]["validar"].ToString());
+            int id = int.Parse(_reportTable.Rows[0]["ClientID"].ToString());
+            ViewAccounts(id);
 
-           return valor;
+            return valor;
 
 
         }
@@ -44,10 +46,18 @@ namespace E_banking.Models
             da.AddParameter("@clientId", client);
             _reportTable = da.ExecuteDataSet().Tables[0];
 
-           
-            
+            List<string> accounts = new List<string>();
+
+            int row = _reportTable.Rows.Count;
+
+            for (int x = 0; x < _reportTable.Rows.Count; x++)
+            {
+                accounts.Add(_reportTable.Rows[x]["account_number"].ToString());
+            }
+
 
             return _reportTable;
         }
     }
+
 }
