@@ -15,40 +15,43 @@
             <div class="row">
                 <div class="form-group col-xs-6">
                     <label>Beneficiario:</label>
-                    <input type="text" name="Beneficiario" class="form-control " id="Beneficiario" placeholder="Beneficiario" required>
+                    <input type="text" maxlength="20"  name="beneficiario" class="form-control " id="Beneficiario" placeholder="Beneficiario" required>
                 </div>
 
                 <div class="form-group col-xs-6">
-                    <label>RD$ : Monto a pagar</label>
-                    <input type="text" class="form-control" placeholder="Monto a pagar" />
-                </div>
+                    <label for="monto">
+                        RD$ : Monto a pagar</label>
+                        <input type="text" name="monto" id="monto" class="form-control" placeholder="Monto a pagar" required />
+</div>
             </div>
             <hr>
             <div class="row">
                 <div class="form-group col-xs-6">
-                    <label for="account">Desde cuenta</label>
-                    <select class="form-control" id="account" name="account">
+                    <label for="cuenta">Desde cuenta</label>
+                    <select class="form-control" id="cuenta" name="cuenta" required>
                         <option>Selecione una cuenta</option>
+                        <option>cuenta express</option>
+
                     </select>
                 </div>
 
                 <div class="form-group col-xs-6">
-                    <label>RD$:Balance Disponible</label>
-                    <input class="form-control" type="text" placeholder="Balance Disponible" readonly>
+                    <label for="balance">RD$:Balance Disponible</label>
+                    <input class="form-control" type="text" name="balance" id="balance" placeholder="Balance Disponible" readonly required>
                 </div>
             </div>
             
             <hr>
 
            <div class="form-group">
-                <label>Descripción:</label>
-                <textarea class="form-control" rows="4" cols="20"></textarea>
+                <label for="descripcion">Descripción:</label>
+                <textarea name="descripcion" id="descripcion" class="form-control" rows="4" cols="20"></textarea>
 
             </div>
             <div>
                 <input class="btn btn-default" type="button" value="Cancelar" />
                 <input class="btn btn-default" type="button" value="Refrescar" />
-                <input class="btn btn-default" type="submit" value="Guardar">
+                <input class="btn btn-success" type="submit" value="Guardar">
             </div>
 
 
@@ -66,63 +69,61 @@
 {
 @section main {
     <h1 class="h-bank">Pago Recurrente</h1> 
-<form>
-    <div>
-        <label>Beneficiario:</label>
-        <select>
-            <option>Selecione un Beneficiario</option>
-        </select>
+<div class="row">
+    <div class="col-sm-9">
+        <form>
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <label for="beneficiario">Beneficiario</label>
+                    <select class="form-control" id="beneficiario" name="beneficiario" required>
+                        <option>Selecione un beneficiario</option>
+                        <option>beneficiario 2</option>
 
+                    </select>
+                </div>
+
+                <div class="form-group col-xs-6">
+                    <label>RD$ : Monto a pagar</label>
+                    <input type="text" class="form-control" name="monto" id="monto" placeholder="Monto a pagar" required readonly />
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <label for="cuenta">Desde cuenta</label>
+                    <select class="form-control" id="cuenta" name="cuenta" required>
+                        <option>Selecione una cuenta</option>
+                        <option>cuenta recurrente</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group col-xs-6">
+                    <label for="balance">RD$:Balance Disponible</label>
+                    <input class="form-control" type="text" name="balance" id="balance" placeholder="Balance Disponible" readonly required>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea name="descripcion" id="descripcion" class="form-control" rows="4" cols="20"></textarea>
+
+            </div>
+            <div>
+                <input class="btn btn-default" type="button" value="Cancelar" />
+                <input class="btn btn-default" type="button" value="Refrescar" />
+                <input class="btn btn-success" type="submit" value="Guardar">
+            </div>
+
+
+        </form>
 
     </div>
-    <div>
-        <label>$ : Monto a pagar</label>
-        <input type="text" />
-
-    </div>
-
-    <div>
-        <hr>
-    </div>
-
-    <div>
-        <label>Desde cuenta</label>
-        <select>
-            <option>Selecione una cuenta</option>
-        </select>
-
-    </div>
-
-    <div>
-        <label>$</label>
-        <input type="text" />
-
-    </div>
-    <div>
-        <label>Balance Disponible</label>
-        <input type="text" />
-
-    </div>
-    <hr>
-    <div>
-        <label>Fecha de pago:</label>
-        <input type="text" />
-
-    </div>
-    <div>
-        <label>Descripción:</label>
-        <textarea rows="4" cols="20"></textarea>
-        <input type="checkbox" />
-        <label>Enviar comprobante al beneficiario</label>
-    </div>
-    <div>
-        <input type="button" value="Cancelar" />
-        <input type="button" value="Refrescar" />
-        <input type="submit" value="Guardar">
-    </div>
-
-
-</form>
+</div>   
        
         } 
 }
+
+<script src="~/Scripts/banking-js/payment.js"></script>

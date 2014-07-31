@@ -158,9 +158,12 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Scripts\banking-js\payment.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jqueryMessage.js" />
     <Content Include="Scripts\owl-carousel\AjaxLoader.gif" />
     <Content Include="Scripts\owl-carousel\grabbing.png" />
     <Content Include="Scripts\owl-carousel\owl.carousel.css" />
@@ -168,6 +171,7 @@
     <Content Include="Scripts\owl-carousel\owl.carousel.min.js" />
     <Content Include="Scripts\owl-carousel\owl.theme.css" />
     <Content Include="Scripts\owl-carousel\owl.transitions.css" />
+    <Content Include="Scripts\validateAddUsers.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -185,6 +189,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -209,6 +214,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_PrincipalBanking.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Banking\AddUsers.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
