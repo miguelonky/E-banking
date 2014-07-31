@@ -28,5 +28,10 @@ namespace E_banking.Controllers
 
                         return View();
         }
+        public ActionResult beneficiarios()
+        {
+            return View();
+
+        }
     }
 }
