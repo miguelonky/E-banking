@@ -128,6 +128,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\consultas.cs" />
+    <Compile Include="Models\Correo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlDataAccess.cs" />
   </ItemGroup>
@@ -208,9 +209,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_PrincipalBanking.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Banking\AddUsers.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
