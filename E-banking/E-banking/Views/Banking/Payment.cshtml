@@ -3,6 +3,19 @@
     Layout = "~/Views/Shared/_PrincipalBanking.cshtml";
 
 }
+@if (ViewBag.id ==null) 
+{
+    @section main {
+        <h1 class="h-bank">Pagos</h1>
+        <hr>
+       <h2 >Pago Expreso</h2>
+
+        <p >Usted puede brindarle a sus clientes la facilidad y accesibilidad de pagar sus compras utilizando tarjetas de débito y crédito (tarjeta ATH®, tarjeta ATH® Internacional, Visa, MasterCard, y otras).</p>
+        <br>
+       <h2>Pago  Recurrente </h2> 
+
+<p>Es el sistema que permite administrar una serie de operaciones relacionadas con los pagos, realizados por los tarjeta de habientes en periodos sucesivos de tiempo, de productos o servicios para un determinado comercio afiliado al sistema.</p>
+        }}
 
 @if (ViewBag.id == "express")
 {
@@ -73,18 +86,22 @@
     <div class="col-sm-9">
         <form>
             <div class="row">
-                <div class="form-group col-xs-6">
+                <div class="form-group col-xs-4">
                     <label for="beneficiario">Beneficiario</label>
                     <select class="form-control" id="beneficiario" name="beneficiario" required>
-                        <option>Selecione un beneficiario</option>
+                        <option> Beneficiario</option>
                         <option>beneficiario 2</option>
 
                     </select>
                 </div>
 
-                <div class="form-group col-xs-6">
+                <div class="form-group col-xs-4">
                     <label>RD$ : Monto a pagar</label>
                     <input type="text" class="form-control" name="monto" id="monto" placeholder="Monto a pagar" required readonly />
+                </div>
+                <div class="form-group col-xs-4 ">
+                    <label>Fecha vencimiento</label>
+                    <input type="text" class="form-control " name="vencimiento" id="vencimiento" placeholder="Fecha " required readonly />
                 </div>
             </div>
             <hr>
