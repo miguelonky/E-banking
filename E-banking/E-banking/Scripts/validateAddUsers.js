@@ -37,4 +37,21 @@ $(function() {
             }
         }
     });
+
+    $('#changepassword').validate({
+        rules: {
+            actual_password: {
+                required: true,
+                minlength: 6
+            },
+            new_password: {
+                required: true,
+                minlength: 6
+            },
+            confirm_password: {
+                required: true,
+                minlength: 6
+            }
+        }
+    });
 })

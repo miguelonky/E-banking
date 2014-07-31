@@ -57,6 +57,10 @@ namespace E_banking.Controllers
 
             return View();
         }
+        [Authorize]
+        public ActionResult AddBeneficiary() {
+            return View();
+        }
 
         //public ActionResult viewAccounts()
         //{

@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "~/Views/_bankingLayout.cshtml";
+    ViewBag.Title = "AddBeneficiary";
+}
+
+@section BankHome {
+    <div class="col-xs-4"></div>
+<form>
+    <fieldset class="col-xs-4">
+        <legend>Añadir Beneficiario</legend>
+
+    <div class="form-group">
+    <label for="name">Nombre del beneficiario: </label>
+    <input class="form-control" type="text" id="name" name="name" />
+        </div>
+        <div class="form-group">
+    <label for="account">N. Cuenta del beneficiario: </label>
+    <input class="form-control" type="text" id="account" name="account" />
+            </div>
+        <div class="form-group">
+    <label for="email">Email del beneficiario: </label>
+    <input class="form-control" type="text" id="email" name="email" />
+            </div>
+        <div class="form-group">
+    <label for="type">Tipo de beneficiario: </label>
+    <select class="form-control" id="type" name="type">
+        <option value="-1">Seleccione</option>
+        <option value="Directo">Directo</option>
+        <option value="Indirecto">Indirecto</option>
+    </select>
+            </div>
+        <div class="form-group text-right">
+    <input class="btn btn-default" type="submit" value="Registrar" />
+            </div>
+        </fieldset>
+</form>
+    }
