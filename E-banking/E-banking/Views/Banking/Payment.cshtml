@@ -7,63 +7,55 @@
 @if (ViewBag.id == "express")
 {
    @section main {
-    <h1 class="h-bank">Pago Expreso</h1>   
- <form>
-    <div>
-        <label>Beneficiario:</label>
-        <input type="text" />
+    <h1 class="h-bank">Pago Expreso</h1>  
+
+<div class="row">
+    <div class="col-sm-9">
+        <form>
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <label>Beneficiario:</label>
+                    <input type="text" name="Beneficiario" class="form-control " id="Beneficiario" placeholder="Beneficiario" required>
+                </div>
+
+                <div class="form-group col-xs-6">
+                    <label>RD$ : Monto a pagar</label>
+                    <input type="text" class="form-control" placeholder="Monto a pagar" />
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <label for="account">Desde cuenta</label>
+                    <select class="form-control" id="account" name="account">
+                        <option>Selecione una cuenta</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-xs-6">
+                    <label>RD$:Balance Disponible</label>
+                    <input class="form-control" type="text" placeholder="Balance Disponible" readonly>
+                </div>
+            </div>
+            
+            <hr>
+
+           <div class="form-group">
+                <label>Descripción:</label>
+                <textarea class="form-control" rows="4" cols="20"></textarea>
+
+            </div>
+            <div>
+                <input class="btn btn-default" type="button" value="Cancelar" />
+                <input class="btn btn-default" type="button" value="Refrescar" />
+                <input class="btn btn-default" type="submit" value="Guardar">
+            </div>
+
+
+        </form>
 
     </div>
-    <div>
-        <label>$ : Monto a pagar</label>
-        <span class="input-mini uneditable-input">Monto a pagar</span>
-
-    </div>
-
-    <div>
-        <hr>
-    </div>
-
-    <div>
-        <label>Desde cuenta</label>
-        <select>
-            <option>Selecione una cuenta</option>
-        </select>
-
-    </div>
-
-     <div>
-         <label>$</label>
-         <input type="text" />
-
-     </div>
-     <div>
-     <label>Balance Disponible</label>
-     <input type="text" />
-
-     </div>
-       <hr>
-     <div>
-         <label>Fecha de pago:</label>
-         <input type="text" />
-
-     </div>
-     <div>
-         <label>Descripción:</label>
-         <textarea rows="4" cols="20" >
-             </textarea>
-         
-              </div>
-       <div >
-           <input type="button" value="Cancelar" />
-           <input type="button" value="Refrescar"/>
-           <input type="submit" value="Guardar">
-       </div>
-
-
-</form>
-
-       
+</div>    
              } 
     
      
