@@ -177,6 +177,6 @@ C:\AppBank\E-banking\E-banking\bin\System.Web.Razor.xml
 C:\AppBank\E-banking\E-banking\bin\System.Web.WebPages.xml
 C:\AppBank\E-banking\E-banking\bin\System.Web.WebPages.Deployment.xml
 C:\AppBank\E-banking\E-banking\bin\System.Web.WebPages.Razor.xml
-C:\AppBank\E-banking\E-banking\obj\Debug\E-banking.csprojResolveAssemblyReference.cache
 C:\AppBank\E-banking\E-banking\obj\Debug\E-banking.dll
 C:\AppBank\E-banking\E-banking\obj\Debug\E-banking.pdb
+C:\AppBank\E-banking\E-banking\obj\Debug\E-banking.csprojResolveAssemblyReference.cache
