@@ -5,7 +5,6 @@ use e_banking;
 -- Creating tables --
 
 -- Creating tables --
-
 create table clients (
 	id int primary key not null identity(1,1),
 	fname varchar (45) not null,
@@ -15,6 +14,12 @@ create table clients (
 	phone char(10) not null,
 	birth_date date
 )
+
+create table last_account (
+	id int primary key not null
+)
+
+insert into last_account values('1')
 
 create table users (
 	id int primary key not null identity (1,1),
@@ -54,7 +59,7 @@ create table loans (
 	amount decimal (13,2) not null,
 	quotes int not null,
 	months int not null,
-	rate decimal (3,2) not null,
+	rate decimal (5,2) not null,
 	begin_date date not null,
 	end_date date not null
 )
@@ -78,7 +83,6 @@ create table beneficiary (
 	email varchar (100) unique not null,
 	type varchar (50) not null
 )
-
 -- End creating tables --
 
 -- Creating relationships --
